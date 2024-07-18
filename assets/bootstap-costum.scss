@@ -1,0 +1,29 @@
+@import 'scss/functions';
+@import 'scss/variables';
+
+$new-primary: rgb(255, 81, 32);
+$new-success: rgb(133, 255, 133);
+$new-warning: rgb(211, 211, 67);
+$diana: purple;
+
+$new-theme-colors: (
+  'primary': $new-primary,
+  'success': $new-success,
+  'warning': $new-warning,
+  'diana': $diana,
+);
+$new-grid-breakpoints: (
+  xxxl: 1600px,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
+
+$new-spacers: (
+  6: $spacer * 4,
+);
+
+$spacers: map-merge($spacers, $new-spacers);
+
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+@import 'scss/bootstrap.scss';

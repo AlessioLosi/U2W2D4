@@ -1,15 +1,4 @@
-@import 'assets/scss/scss/functions';
-@import 'assets/scss/scss/variables';
 
-$new-primary: rgb(255, 81, 32);
-$new-success: rgb(133, 255, 133);
-$new-warning: rgb(211, 211, 67);
-$diana: purple;
 
-$new-theme-colors: (
-  'primary': $new-primary,
-  'success': $new-success,
-  'warning': $new-warning,
-  'diana': $diana,
-);
 
+@import 'scss/scss/bootstrap.scss';

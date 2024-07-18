@@ -1,5 +1,5 @@
-@import 'scss/functions';
-@import 'scss/variables';
+@import 'assets/scss/scss/functions';
+@import 'assets/scss/scss/variables';
 
 $new-primary: rgb(255, 81, 32);
 $new-success: rgb(133, 255, 133);
@@ -12,18 +12,4 @@ $new-theme-colors: (
   'warning': $new-warning,
   'diana': $diana,
 );
-$new-grid-breakpoints: (
-  xxxl: 1600px,
-);
 
-$grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
-
-$new-spacers: (
-  6: $spacer * 4,
-);
-
-$spacers: map-merge($spacers, $new-spacers);
-
-
-$theme-colors: map-merge($theme-colors, $new-theme-colors);
-@import 'scss/bootstrap.scss';
